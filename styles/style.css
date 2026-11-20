@@ -117,13 +117,18 @@ header {
 }
 
 /* PROFILE IMAGE */
+.home-image {
+    flex-shrink: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 12%, #000 38%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 12%, #000 38%);
+}
+
 .home-image img {
-    width: 300px;
-    height: 300px;
+    display: block;
+    width: 380px;
+    height: 480px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #38bdf8;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+    object-position: center;
 }
 
 /* GENERAL SECTIONS */
@@ -266,8 +271,8 @@ footer {
     }
 
     .home-image img {
-        width: 220px;
-        height: 220px;
+        width: 280px;
+        height: 360px;
     }
 
     .skills-container {
